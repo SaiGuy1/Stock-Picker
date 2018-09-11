@@ -3,5 +3,19 @@
 
  def stock_picker(arr)
 
+  max_profit = 0 
+
+  days = []
+
+  arr.each.with_index do |num1, idx1|
+    arr.each.with_index do |num2, idx2|
+      if idx1 < idx2 && (num2 - num1) > max_profit
+        max_profit = num2 - num1
+        days = [idx1, idx2]
+      end
+    end
+  end
+
+  days 
+  
  end
- 
