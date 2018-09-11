@@ -16,6 +16,7 @@
     end
   end
 
+  # return most profitable days 
   days 
   
  end
